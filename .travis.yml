@@ -3,3 +3,10 @@ jdk:
   - openjdk8
 before_install:
   - mvn versions:set -DnewVersion=1.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: gzTlAMcdRZKiVNpj805K9YOYovQyskmuhLeIAePZjGJs/ilK0yazqKe89vHhsSfaw0W9TJF+Fm4Z4BSVX+rqK0CAOIGVss6sTQGzmnqv5arFmUlVuS2pif/4LEskmF7AU20Q+dz1j/mQ/s/X81FZvS29yM2mn8Bj0VxEMYG/6vIJigNqJIXnku0lxaUvmYhXmFg5d298MMzLhwcmIIq51BQMdEI7TKIAHu2ox1ro12HeArfvMUpr7jfi0zRnt3NlIzqkrjJndZPmayMO83SN22qBXYOtV6TyEyEopUMTNs079aZUH6v6gBzUmpmq2ZsUND3lXZNtJN0GH4ytiJ1U4pPyPEYvP1cNCM3+7xH6GvUoT2aKfqaD2RZlGbH9SVnfDlhMr1JJaSzJIfJzfML1KGeflKhukva98zXT6pPS8ve3BAgbF3BTs91CLvPeglHOJovFnhz8lwHKxk2JdFH696rE3GGK446gRXXaEZ61u5kbPBrfYORg6ymQnlYjBoaweVGcK8bKF0cDdNgym/5cS40s0Yg3VM+BXtTxxbVN38VuapIiFj6gAeFj+AJ/liPE7WVVc0g7OA4NyP9txy5Tsk5Ieb7jnKgKjHCrt1nTBOAtXgACEGxM0XUnKeYb/91WMssNjMDUntF8vstu/rBh3qwgQ65zGrSfhCeruxF06HA=
+  app: github-api-int
+  on:
+    repo: karthikuus/test-api
