@@ -1,1 +1,1 @@
-web: java -jar target/iframex-api-1.0.jar
+web: java $JAVA_OPTS -jar target/*.jar --port $PORT
